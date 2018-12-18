@@ -15,15 +15,13 @@
 
 void *liberrors_smalloc(int size)
 {
-  if (size < 0)
-  {
+  if (size < 0) {
     liberrors_log_error("Invalid size: %d", size);
     return NULL;
   }
 
   void *ptr = malloc(size);
-  if (!ptr)
-  {
+  if (!ptr) {
     liberrors_log_error("%s", strerror(errno));
     return NULL;
   }

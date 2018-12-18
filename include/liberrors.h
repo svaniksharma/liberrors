@@ -46,8 +46,7 @@
 /* Macros for NULL Checks. */
 
 #define liberrors_assert(obj, ...) { \
-  if (!obj) \
-  { \
+  if (!obj) { \
     liberrors_log_error("obj == NULL"); \
     return __VA_ARGS__; \
   } \
