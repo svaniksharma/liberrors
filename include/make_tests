@@ -16,7 +16,7 @@ if [[ "$1" == "" ]]
 then
 
   cat <<EOF
-  make_tests.sh [c|d]:
+  ./make_tests [c|d]:
 
   c - Creates symbolic links to all *_test files in the test/ directory.
   d - Deletes symbolic links to all *_test files in the test/ directory.

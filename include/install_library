@@ -13,7 +13,7 @@
 
 if [[ $1 == "" || $1 == "help" ]]
 then
-  echo "Usage: ./install_library.sh [test|install|clean|dist]"
+  echo "Usage: ./install_library [test|install|clean|dist]"
   cat <<.
 test: Creates the test file in the test/ directory.
 install: Creates and installs the library.
