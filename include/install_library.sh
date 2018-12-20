@@ -41,15 +41,13 @@ then
   ./make_tests.sh d
   make clean && make uninstall
   rm Makefile test/Makefile test/liberrors_test
+  rm -rf config.* depcomp install-sh compile autom4te.cache missing libtool \
+  aclocal.m4 *.in test/*.in test/*.o *.o liberrors.la liberrors.lo \
+  configure stamp-h1 ltmain.sh
+  rm AUTHORS COPYING INSTALL NEWS ChangeLog
 elif [[ $1 == "dist" ]]
 then
   ./configure && make dist
 else
   echo "Option unknown. Use the help option to see list of commands." >&2
 fi
-
-rm -rf config.* depcomp install-sh compile autom4te.cache missing libtool \
-aclocal.m4 *.in test/*.in test/*.o *.o liberrors.la liberrors.lo \
-configure stamp-h1 ltmain.sh
-rm -r .libs .deps .dirstamp test/.deps test/.libs
-rm AUTHORS COPYING INSTALL NEWS ChangeLog
