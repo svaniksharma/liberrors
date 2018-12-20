@@ -44,6 +44,7 @@ then
   rm -rf config.* depcomp install-sh compile autom4te.cache missing libtool \
   aclocal.m4 *.in test/*.in test/*.o *.o liberrors.la liberrors.lo \
   configure stamp-h1 ltmain.sh
+  rm -r .deps test/.deps
   rm AUTHORS COPYING INSTALL NEWS ChangeLog
 elif [[ $1 == "dist" ]]
 then
