@@ -26,6 +26,7 @@ void *liberrors_smalloc(int size)
     return NULL;
   }
 
+  memset(ptr, 0x0, size);
   return ptr;
 }
 
@@ -35,6 +36,7 @@ void *liberrors_scalloc(int size, int each)
     liberrors_handle_exception(NULL, "Invalid size: %d", size);
   void *ptr = calloc(size, each);
   liberrors_assert(ptr, NULL);
+  memset(ptr, 0x0, size * each);
   return ptr;
 }
 
