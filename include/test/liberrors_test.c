@@ -33,7 +33,6 @@ int main(int argc, char *argv[])
   test = liberrors_srealloc(test, 123, 130);
   memset(test + 122, 'C', 6);
   liberrors_log_debug("Value of test is %s", test);
-  char *test2 = NULL;
   free(test);
   return 0;
 }
