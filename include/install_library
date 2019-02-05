@@ -1,3 +1,11 @@
+# @Author: S. Sharma <silentcat>
+# @Date:   2019-02-02T11:52:07-06:00
+# @Email:  silentcat@protonmail.com
+# @Last modified by:   silentcat
+# @Last modified time: 2019-02-04T20:48:23-06:00
+
+
+
 #!/usr/bin/env bash
 
 ############################
@@ -32,7 +40,7 @@ then
   ./configure
   cd test && make
   cd ../
-  ./make_tests.sh c
+  ./make_tests c
 elif [[ $1 == "install" ]]
 then
   ./configure && make && make install

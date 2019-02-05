@@ -1,13 +1,11 @@
-/*
-###################################
-#                                 #
-# Author: silentcat               #
-# Date: 2018-12-13                #
-# Description: A test file for    #
-# debugging liberrors.            #
-#                                 #
-###################################
-*/
+/**
+ * @Author: S. Sharma <silentcat>
+ * @Date:   2019-02-02T11:52:07-06:00
+ * @Email:  silentcat@protonmail.com
+ * @Last modified by:   silentcat
+ * @Last modified time: 2019-02-04T20:51:41-06:00
+ */
+
 
 #include "../liberrors.h"
 
@@ -35,6 +33,7 @@ int main(int argc, char *argv[])
   test = liberrors_srealloc(test, 123, 130);
   memset(test + 122, 'C', 6);
   liberrors_log_debug("Value of test is %s", test);
+  char *test2 = NULL;
   free(test);
   return 0;
 }

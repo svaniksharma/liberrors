@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
 
-###################################
-#                                 #
-# Author: silentcat               #
-# Date: 2018-12-13                #
-# Description: Makes symbolic     #
-# links to the actual test files  #
-# in the test/ directory for ease #
-# of typing.                      #
-#                                 #
-###################################
+# @Author: S. Sharma <silentcat>
+# @Date:   2019-02-02T11:52:07-06:00
+# @Email:  silentcat@protonmail.com
+# @Last modified by:   silentcat
+# @Last modified time: 2019-02-04T20:53:22-06:00
 
 
 if [[ "$1" == "" ]]
@@ -37,6 +32,7 @@ then
   do
     rm $i
   done
+  rm liberrors_test
 else
   echo "Command unrecognized."
 fi

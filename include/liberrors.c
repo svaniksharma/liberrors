@@ -1,13 +1,10 @@
-/*
-###################################
-#                                 #
-# Author: silentcat               #
-# Date: 2018-12-13                #
-# Description: Provides utilities #
-# for dealing with errors in C.   #
-#                                 #
-###################################
-*/
+/**
+ * @Author: S. Sharma <silentcat>
+ * @Date:   2019-02-02T11:52:07-06:00
+ * @Email:  silentcat@protonmail.com
+ * @Last modified by:   silentcat
+ * @Last modified time: 2019-02-04T20:38:03-06:00
+ */
 
 #include "liberrors.h"
 
