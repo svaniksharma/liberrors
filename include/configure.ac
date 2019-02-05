@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([liberrors], [1.01], [silentcat@silentcat.s])
+AC_INIT([liberrors], [1.02], [silentcat@silentcat.s])
 AC_CONFIG_SRCDIR([liberrors.h])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([
